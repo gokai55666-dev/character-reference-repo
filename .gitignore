@@ -205,3 +205,46 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Create .gitignore
+cat << 'EOF' > .gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Models
+models/*.safetensors
+models/*.bin
+*.ckpt
+
+# Generated images
+generated_images/
+benchmarks/test_results/generated_images/
+
+# Dataset (if large)
+dataset/train/images/*.png
+dataset/train/images/*.jpg
+
+# Environment
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+
+# Initialize git
+git init
+git add .
+git commit -m "Complete working implementation of character consistency framework"
+
+# Show final structure
+echo -e "\n✅ Repository structure created:\n"
+tree -L 2 -I '__pycache__|*.pyc|*.safetensors'
