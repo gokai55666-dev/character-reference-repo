@@ -11,3 +11,56 @@ insightface>=0.7.3
 onnxruntime>=1.15.0
 gradio>=4.0.0
 tqdm>=4.65.0
+
+
+---
+
+## Step 3: Working docs/character_bible.md (Enhanced with Validation)
+
+Create `docs/character_bible.md`:
+
+```markdown
+# Character Bible: [Character Name]
+
+This document serves as the definitive guide for the visual and narrative identity of [Character Name]. It outlines all invariant features for AI consistency.
+
+## Invariant Features
+
+These are the core characteristics that define [Character Name] and must remain consistent across all generations.
+
+### Physical Appearance
+
+| Feature | Description | Validation Criteria |
+| :--- | :--- | :--- |
+| **Gender** | Woman | Female-presenting features |
+| **Eyes** | Almond-shaped, emerald green | Eye shape ratio > 2.5:1 width:height; RGB color range (50-80, 120-150, 70-100) |
+| **Nose** | Delicate, small | Nose width < 0.4 of eye distance |
+| **Lips** | Full, naturally plump | Lip thickness > 0.3 of nose width |
+| **Hair** | Wavy, chestnut | Wave frequency 3-5 per face height; RGB color range (90-130, 60-90, 40-70) |
+| **Freckles** | Light freckles on cheeks | Density 10-30 freckles per cheek; visibility score 0.3-0.7 |
+| **Smile** | Warm, inviting | Mouth corner angle 10-25 degrees upward |
+| **Build** | Average | Height/width ratio 2.2-2.6 |
+
+### Attire (Default)
+
+| Item | Description | Notes |
+| :--- | :--- | :--- |
+| **Dress** | Simple white dress | No patterns, classic cut, crew neck or scoop neck |
+| **Accessories** | None | Avoid jewelry unless specified for a variation |
+
+## Character Personality & Demeanor
+
+[Character Name] possesses a gentle and approachable demeanor. She is often depicted with a warm, inviting smile, reflecting her kind nature. Her overall presence should convey quiet confidence and warmth.
+
+## Reference Imagery
+
+Reference images are stored in `assets/original_references/`. The following angles are required for consistency:
+- Front-facing (3+ images)
+- 3/4 view left and right (2+ each)
+- Profile left and right (1+ each)
+- Back view (1+)
+- Various expressions (smiling, neutral, surprised, serious)
+
+## Prompt Templates
+
+### Standard Portrait
