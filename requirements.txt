@@ -1,17 +1,25 @@
+# Core ML
 torch>=2.0.0
 torchvision>=0.15.0
 transformers>=4.30.0
 diffusers>=0.24.0
 accelerate>=0.25.0
+peft>=0.6.0
+
+# Image Processing
 pillow>=10.0.0
 opencv-python>=4.8.0
-numpy>=1.24.0
 scikit-image>=0.21.0
+numpy>=1.24.0
+
+# Face Detection & Analysis
 insightface>=0.7.3
 onnxruntime>=1.15.0
-gradio>=4.0.0
-tqdm>=4.65.0
 
+# Utilities
+tqdm>=4.65.0
+gradio>=4.0.0
+scipy>=1.10.0
 
 ---
 
