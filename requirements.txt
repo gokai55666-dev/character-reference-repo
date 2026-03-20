@@ -64,3 +64,42 @@ Reference images are stored in `assets/original_references/`. The following angl
 ## Prompt Templates
 
 ### Standard Portrait
+```
+
+A portrait of [character_name], [expression], [lighting], [background]
+
+```
+
+### Full Body
+```
+
+A full body shot of [character_name], wearing [outfit], [pose], [setting]
+
+```
+
+### Action Shot
+```
+
+[character_name] [action], dynamic pose, [camera_angle], [lighting]
+
+```
+
+## Negative Prompts
+```
+
+ugly, deformed, blurry, low quality, distorted features, wrong eye color, missing freckles, different hairstyle, jewelry, tattoos, glasses, hat, mask
+
+```
+
+## Evolution and Variations
+
+| Date | Change | Reason |
+| :--- | :--- | :--- |
+| | | |
+
+---
+
+*This document is a living guide. Update validation criteria as the model improves.*
+```
+
+---
